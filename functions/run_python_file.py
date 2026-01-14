@@ -26,13 +26,13 @@ def run_python_file(working_directory, file_path, args=None):
         
         output_string_process = ""
         if return_code != 0:
-            output_string_process += f"Process exited with code {return_code} \n"
+            output_string_process += f"Process exited with code {return_code} \n "
         if run_process.stdout == None and run_process.stderr == None:
-            output_string_process += "No output produced \n"
+            output_string_process += "No output produced \n "
         if run_process.stdout != None:
-            output_string_process += f'STDOUT: {run_process.stdout} \n'
+            output_string_process += f'STDOUT: {run_process.stdout} \n '
         if run_process.stderr != None:
-            output_string_process += f'STDERR: {run_process.stderr}'
+            output_string_process += f'STDERR: {run_process.stderr} \n '
 
         return output_string_process
 
